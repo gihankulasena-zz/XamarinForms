@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinDemo.MasterLayout" MasterBehavior="Popover">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Master Page" Icon="@drawable/menu" BackgroundColor="Yellow">
+            <ContentPage.Content>
+                <StackLayout Padding="5">
+                    <Button Text="Home" Clicked="Home_Clicked" BackgroundColor="White" TextColor="Red" BorderColor="Red" BorderWidth="1"></Button>
+                    <Button Text="About" Clicked="About_Clicked" BackgroundColor="White" TextColor="Red" BorderColor="Red" BorderWidth="1"></Button>
+                    <Button Text="CRUD" Clicked="CRUD_Clicked" BackgroundColor="Purple" TextColor="White" BorderColor="White" BorderWidth="1"></Button>
+                    <Button Text="Demo" Clicked="Demo_Clicked" BackgroundColor="Blue" TextColor="White" BorderColor="White" BorderWidth="1"></Button>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>               
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <ContentPage>
+            <ContentPage.Content>
+                <StackLayout Padding="20" Spacing="10">
+                    <Label Text="Detail Page 1" x:Name="detailPage1"></Label>                    
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>         
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
